@@ -35,10 +35,10 @@ entries <- entries |>
 # Write feeds
 res <- purrr::map(.x = entries, .f = write_feed, .progress = TRUE)
 
-# Move feed files
+# Move feed files to webserver
 fs::file_move(
   path = "feeds/",
-  new_path = "/dados/htdocs/shiny.icict.fiocruz.br/feed/"
+  new_path = "/dados/htdocs/shiny.icict.fiocruz.br/"
 )
 
 # Save last send time
