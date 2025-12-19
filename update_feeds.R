@@ -10,6 +10,13 @@ source(file = "collector_inmet.R")
 source(file = "write_feed.R")
 mun_feeds <- readRDS("mun_feeds.rds")
 
+ntfy_topic <- "ocs_update_feeds"
+
+ntfy::ntfy_send(
+  message = glue::glue("Update job start: {lubridate::now()}"),
+  topic = ntfy_topic
+)
+
 # Ref time
 # ref_time <- as.POSIXct("2025-12-15 00:01")
 # ref_time <- readRDS(file = "last_send_time.rds")
@@ -61,4 +68,10 @@ fs::file_move(
 # saveRDS(object = Sys.time(), file = "last_send_time.rds")
 
 cli::cli_alert_info("Update job end: {lubridate::now()}")
+
+ntfy::ntfy_send(
+  message = glue::glue("Update job end: {lubridate::now()}"),
+  topic = ntfy_topic
+)
+
 cli::cli_h1("END")
