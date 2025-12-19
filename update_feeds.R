@@ -33,14 +33,14 @@ entries <- entries |>
   purrr::map(.f = purrr::transpose)
 
 # Write feeds
+fs::dir_create(path = "/dados/home/rfsaldanha/ocs_feed/feeds")
 res <- purrr::map(.x = entries, .f = write_feed, .progress = TRUE)
 
 # Move feed files to webserver
 fs::file_move(
   path = "feeds/",
-  new_path = "/dados/htdocs/shiny.icict.fiocruz.br/"
+  new_path = "/dados/htdocs/shiny.icict.fiocruz.br/ocs/"
 )
-fs::dir_create(path = "/dados/home/rfsaldanha/ocs_feed/feeds")
 
 # Save last send time
 saveRDS(object = Sys.time(), file = "last_send_time.rds")
