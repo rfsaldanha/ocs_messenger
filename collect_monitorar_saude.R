@@ -38,7 +38,11 @@ collect_monitorar_saude <- function() {
       identifier = uuid::UUIDgenerate(),
       title = "Alerta de PM2.5",
       message = glue::glue(
-        "Estima-se que nos próximos sete dias o município apresente concentrações de PM 2.5 acima dos valores recomendados pela Organização Mundial da Saúde (OMS) nas seguinte(s) data(s): {dates}."
+        "Estima-se que nos próximos sete dias o município apresente concentrações de PM 2.5 acima dos valores recomendados pela Organização Mundial da Saúde (OMS) nas seguinte(s) data(s): {dates}.</br>Teste de HTML: <ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>"
       )
     ) |>
     dplyr::select(identifier, code_muni, title, message)
