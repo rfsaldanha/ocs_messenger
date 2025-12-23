@@ -57,7 +57,7 @@ collect_monitorar_saude <- function() {
         </ul>
         <br>
         <i>Alerta emitido pelo Observatório de Clima e Saúde (LIS/ICICT/Fiocruz), à partir de dados do Copernicus Atmosphere Monitoring Service (CAMS).</i>        
-        <img src='https://shiny.icict.fiocruz.br/monitorarsaude/pin_obs_horizontal.png' alt='Observatório de Clima e Saúde' style='width: 20%; height: auto;'>
+        <img src='https://shiny.icict.fiocruz.br/monitorarsaude/pin_obs_horizontal.png' alt='Observatório de Clima e Saúde' style='width: 100px;'>
         "
       )
     ) |>
