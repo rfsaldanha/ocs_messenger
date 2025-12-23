@@ -56,8 +56,9 @@ collect_monitorar_saude <- function() {
         <li>Seguir orientações médicas e procurar atendimento em caso de falta de ar, tosse persistente ou piora de sintomas respiratórios.</li>
         </ul>
         <br>
-        <i>Alerta emitido pelo Observatório de Clima e Saúde (LIS/ICICT/Fiocruz), à partir de dados do Copernicus Atmosphere Monitoring Service (CAMS).</i>        
-        <img src='https://shiny.icict.fiocruz.br/monitorarsaude/pin_obs_horizontal.png' alt='Observatório de Clima e Saúde' style='width: 100px;'>
+        <i>Alerta emitido pelo Observatório de Clima e Saúde (LIS/ICICT/Fiocruz), à partir de dados do Copernicus Atmosphere Monitoring Service (CAMS).</i>
+        <br>        
+        <img src='https://shiny.icict.fiocruz.br/monitorarsaude/pin_obs_horizontal.png' alt='Observatório de Clima e Saúde' heigth='50px'>
         "
       )
     ) |>
