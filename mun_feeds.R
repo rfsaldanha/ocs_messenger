@@ -4,7 +4,7 @@ df <- res |>
   sf::st_drop_geometry() |>
   dplyr::select(code_muni, name_muni, abbrev_state) |>
   dplyr::mutate(code_muni = as.character(code_muni)) |>
-  dplyr::mutate(title = paste0(name_muni, ", ", abbrev_state)) |>
+  dplyr::mutate(feed_title = paste0(name_muni, ", ", abbrev_state)) |>
   dplyr::mutate(
     name_muni = stringi::stri_trans_general(
       str = name_muni,
@@ -23,6 +23,6 @@ df <- res |>
     ),
     name_muni = paste0("ocs_", name_muni)
   ) |>
-  dplyr::select(code_muni, title, feed = name_muni)
+  dplyr::select(code_muni, feed_title, feed = name_muni)
 
 saveRDS(object = df, file = "mun_feeds.rds")

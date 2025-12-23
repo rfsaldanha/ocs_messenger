@@ -9,7 +9,7 @@ write_feed <- function(
   feed <- xml2::xml_new_root("feed", xmlns = atom_ns)
 
   # Add required feed-level elements
-  xml2::xml_add_child(feed, "title", paste("Alerta", entries[[1]]$title))
+  xml2::xml_add_child(feed, "title", paste("Alerta", entries[[1]]$feed_title))
   xml2::xml_add_child(feed, "subtitle", subtitle)
   xml2::xml_add_child(feed, "link", href = site_url)
   xml2::xml_add_child(feed, "link", href = feed_url, rel = "self")
