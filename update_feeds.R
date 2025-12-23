@@ -7,6 +7,7 @@ cli::cli_alert("Configuring setup environment...")
 setwd("/dados/home/rfsaldanha/ocs_feed/")
 
 source(file = "collector_inmet.R")
+source(file = "collect_monitorar_saude.R")
 source(file = "write_feed.R")
 mun_feeds <- readRDS("mun_feeds.rds")
 
@@ -23,14 +24,19 @@ ntfy::ntfy_send(
 
 # Run collectors
 cli::cli_alert("Running collectors...")
+
 cli::cli_inform("INMET collector...")
 inmet_entries <- collect_inmet(last_n = 10)
 cli::cli_alert_success("INMET collector done!")
 
+cli::cli_inform("MonitorAr Saúde collector...")
+monitorar_saude_entries <- collect_monitorar_saude()
+cli::cli_alert_success("MonitorAr Saúde collector done!")
+
 # Bind all entries
 cli::cli_alert("Binding all entries...")
 entries <- tibble::tibble()
-entries <- dplyr::bind_rows(entries, inmet_entries)
+entries <- dplyr::bind_rows(entries, monitorar_saude_entries, inmet_entries)
 
 if (nrow(entries) == 0) {
   stop("No new entries")
