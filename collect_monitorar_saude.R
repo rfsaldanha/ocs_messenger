@@ -56,7 +56,7 @@ collect_monitorar_saude <- function() {
         <li>Seguir orientações médicas e procurar atendimento em caso de falta de ar, tosse persistente ou piora de sintomas respiratórios.</li>
         </ul>
         <br>
-        <i>Alerta emitido pelo Observatório de Clima e Saúde (LIS/ICICT/Fiocruz) à partir de dados do Copernicus Atmosphere Monitoring Service (CAMS).</i>        
+        <i>Alerta emitido pelo Observatório de Clima e Saúde (LIS/ICICT/Fiocruz) à partir de dados do Copernicus Atmosphere Monitoring Service (CAMS).</i>
         "
       )
     ) |>
@@ -101,6 +101,8 @@ collect_monitorar_saude <- function() {
         <li>Reduzir esforços físicos intensos ao ar livre.</li>
         <li>Procurar atendimento de saúde em caso de desconforto respiratório ou agravamento de doenças preexistentes.</li>
         </ul>
+        <br>
+        <i>Alerta emitido pelo Observatório de Clima e Saúde (LIS/ICICT/Fiocruz) à partir de dados do Copernicus Atmosphere Monitoring Service (CAMS).</i>
         "
       )
     ) |>
@@ -145,6 +147,8 @@ collect_monitorar_saude <- function() {
         <li>Evitar exercícios físicos intensos em ambientes externos.</li>
         <li>Manter hidratação adequada e atenção a sintomas respiratórios.</li>
         </ul>
+        <br>
+        <i>Alerta emitido pelo Observatório de Clima e Saúde (LIS/ICICT/Fiocruz) à partir de dados do Copernicus Atmosphere Monitoring Service (CAMS).</i>
         "
       )
     ) |>
@@ -188,6 +192,8 @@ collect_monitorar_saude <- function() {
         <li>Utilizar protetor solar, chapéu, roupas de manga longa e óculos escuros.</li>
         <li>Redobrar cuidados com crianças, idosos e trabalhadores ao ar livre.</li>
         </ul>
+        <br>
+        <i>Alerta emitido pelo Observatório de Clima e Saúde (LIS/ICICT/Fiocruz) à partir de dados do Copernicus Atmosphere Monitoring Service (CAMS).</i>
         "
       )
     ) |>
@@ -233,6 +239,8 @@ collect_monitorar_saude <- function() {
         <li>Permanecer em locais ventilados ou climatizados sempre que possível.</li>
         <li>Procurar atendimento em caso de tontura, fraqueza, confusão mental ou febre.</li>
         </ul>
+        <br>
+        <i>Alerta emitido pelo Observatório de Clima e Saúde (LIS/ICICT/Fiocruz) à partir de dados do Copernicus Atmosphere Monitoring Service (CAMS).</i>
         "
       )
     ) |>
@@ -277,6 +285,8 @@ collect_monitorar_saude <- function() {
         <li>Evitar exposição prolongada ao frio, especialmente à noite e madrugada.</li>
         <li>Procurar atendimento em caso de dificuldade respiratória, sonolência excessiva ou tremores intensos.</li>
         </ul>
+        <br>
+        <i>Alerta emitido pelo Observatório de Clima e Saúde (LIS/ICICT/Fiocruz) à partir de dados do Copernicus Atmosphere Monitoring Service (CAMS).</i>
         "
       )
     ) |>
